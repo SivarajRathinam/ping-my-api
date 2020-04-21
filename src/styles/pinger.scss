@@ -1,0 +1,72 @@
+@import "./style.scss";
+
+.pingme {
+  &-layout-container {
+    padding-top: 50px;
+    .form-control:disabled,
+    .form-control[readonly] {
+      background-color: $white;
+    }
+  }
+  &-curl-container__col {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+  }
+  &-send-btn {
+    &__col {
+      display: flex;
+      justify-content: flex-end;
+    }
+    min-width: 200px;
+  }
+  &-input-dropdown {
+    background-color: $white;
+  }
+  &-tab-data {
+    background: $white;
+    padding: 10px;
+    margin: 15px;
+  }
+  &-key-value {
+    &__row {
+      margin: 10px;
+      .pingme-img-container {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        width: 50px;
+        img {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    &__btn-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px;
+      button {
+        min-width: 100px;
+      }
+    }
+  }
+}
+
+.modal-body {
+  .container {
+    .row:first-child {
+      textarea {
+        margin: 10px 0px;
+      }
+    }
+    .row:last-child {
+      .col {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

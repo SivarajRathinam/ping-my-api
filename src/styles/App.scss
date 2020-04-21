@@ -1,0 +1,6 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./style.scss";
+body {
+  min-height: 100vh;
+  background-color: $bgColor;
+}
