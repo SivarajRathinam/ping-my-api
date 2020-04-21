@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ping-my-api/static/css/main.d6c516a3.chunk.css",
+    "main.js": "/ping-my-api/static/js/main.de0853aa.chunk.js",
+    "main.js.map": "/ping-my-api/static/js/main.de0853aa.chunk.js.map",
+    "runtime-main.js": "/ping-my-api/static/js/runtime-main.3da4610b.js",
+    "runtime-main.js.map": "/ping-my-api/static/js/runtime-main.3da4610b.js.map",
+    "static/js/2.b51cc017.chunk.js": "/ping-my-api/static/js/2.b51cc017.chunk.js",
+    "static/js/2.b51cc017.chunk.js.map": "/ping-my-api/static/js/2.b51cc017.chunk.js.map",
+    "index.html": "/ping-my-api/index.html",
+    "precache-manifest.62de6c6dbafa661aa8904df6c995e801.js": "/ping-my-api/precache-manifest.62de6c6dbafa661aa8904df6c995e801.js",
+    "service-worker.js": "/ping-my-api/service-worker.js",
+    "static/css/main.d6c516a3.chunk.css.map": "/ping-my-api/static/css/main.d6c516a3.chunk.css.map",
+    "static/js/2.b51cc017.chunk.js.LICENSE.txt": "/ping-my-api/static/js/2.b51cc017.chunk.js.LICENSE.txt",
+    "static/media/close.png": "/ping-my-api/static/media/close.71077684.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3da4610b.js",
+    "static/js/2.b51cc017.chunk.js",
+    "static/css/main.d6c516a3.chunk.css",
+    "static/js/main.de0853aa.chunk.js"
+  ]
+}
