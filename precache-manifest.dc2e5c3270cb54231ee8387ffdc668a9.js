@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be22d1c4a85a7ede1ee90cd66b2487aa",
+    "revision": "b8b88f472370df3c99a482fdd53c4a5f",
     "url": "/ping-my-api/index.html"
   },
   {
-    "revision": "00826a5b75adabe1046c",
-    "url": "/ping-my-api/static/css/main.d6c516a3.chunk.css"
+    "revision": "52dbfd6f782dc9e219b2",
+    "url": "/ping-my-api/static/css/main.23105f0c.chunk.css"
   },
   {
-    "revision": "970531147d27c0cbf2fd",
-    "url": "/ping-my-api/static/js/2.b51cc017.chunk.js"
+    "revision": "352d220b331542b1b086",
+    "url": "/ping-my-api/static/js/2.c30a4308.chunk.js"
   },
   {
     "revision": "d26cf3db69a09796eb6a71ff1d1c75cc",
-    "url": "/ping-my-api/static/js/2.b51cc017.chunk.js.LICENSE.txt"
+    "url": "/ping-my-api/static/js/2.c30a4308.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "00826a5b75adabe1046c",
-    "url": "/ping-my-api/static/js/main.de0853aa.chunk.js"
+    "revision": "52dbfd6f782dc9e219b2",
+    "url": "/ping-my-api/static/js/main.70f8e9ec.chunk.js"
   },
   {
     "revision": "95c68139b78c0aea997a",
