@@ -139,6 +139,11 @@ const PingMe = (props) => {
   return (
     <Container>
       <Row>
+        <Col className="pingme-container__header">
+          <h2>Ping My Api</h2>
+        </Col>
+      </Row>
+      <Row>
         <Col className="pingme-curl-container__col">
           <ImportCurl updateData={updateData} />
         </Col>
