@@ -14,6 +14,7 @@ import { hitApiAsync } from "../redux/actions";
 import KeyValueComponent from "../components/keyValueComponent";
 import ImportCurl from "./importCurl";
 import convertDataFormat from "../helpers/convertFormat";
+import Loader from "../components/loader";
 const PingMe = (props) => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
@@ -167,16 +168,19 @@ const PingMe = (props) => {
       </Row>
       <Row>
         <Col className="pingme-send-btn__col">
-          <Button
-            variant="dark"
-            onClick={handleButtonClick}
-            className="pingme-send-btn"
-          >
-            Send
-          </Button>
+          {!state.isFetching && (
+            <Button
+              variant="dark"
+              onClick={handleButtonClick}
+              className="pingme-send-btn"
+            >
+              Send
+            </Button>
+          )}
+          {state.isFetching && <Loader />}
         </Col>
       </Row>
-      <Row>
+      <Row className="pingme-response-container">
         <Col>
           <div>
             <span>

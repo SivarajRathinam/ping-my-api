@@ -1,6 +1,9 @@
 @import "./style.scss";
 
 .pingme {
+  &-response-container {
+    margin-bottom: 50px;
+  }
   &-layout-container {
     padding-top: 50px;
     .form-control:disabled,
@@ -27,6 +30,14 @@
     background: $white;
     padding: 10px;
     margin: 15px;
+    .tab-content {
+      .active.show {
+        .container:first-child {
+          max-height: 190px;
+          overflow: auto;
+        }
+      }
+    }
   }
   &-key-value {
     &__row {
@@ -47,7 +58,7 @@
     &__btn-container {
       display: flex;
       justify-content: flex-end;
-      margin-right: 20px;
+      margin: 10px 20px;
       button {
         min-width: 100px;
       }

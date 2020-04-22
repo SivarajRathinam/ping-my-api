@@ -58,48 +58,52 @@ const KeyValueComponent = (props) => {
   }, [data]);
 
   return (
-    <Container>
-      <Row className="pingme-key-value__row">
-        <Col>
-          <span>Key</span>
-        </Col>
-        <Col>
-          <span>Value</span>
-        </Col>
-      </Row>
-      {data.map((item, index) => {
-        return (
-          <Row className="pingme-key-value__row">
-            <Col>
-              <FormControl
-                aria-describedby="basic-addon1"
-                value={item.keyItem}
-                onChange={(e) => handleChange(e, "keyItem", index)}
+    <>
+      <Container>
+        <Row className="pingme-key-value__row">
+          <Col>
+            <span>Key</span>
+          </Col>
+          <Col>
+            <span>Value</span>
+          </Col>
+        </Row>
+        {data.map((item, index) => {
+          return (
+            <Row className="pingme-key-value__row">
+              <Col>
+                <FormControl
+                  aria-describedby="basic-addon1"
+                  value={item.keyItem}
+                  onChange={(e) => handleChange(e, "keyItem", index)}
+                />
+              </Col>
+              <Col>
+                <FormControl
+                  aria-describedby="basic-addon1"
+                  value={item.valueItem}
+                  onChange={(e) => handleChange(e, "valueItem", index)}
+                />
+              </Col>
+              <ImageComponent
+                src={closeImage}
+                onClick={() => removeRow(index)}
+                index={index}
               />
-            </Col>
-            <Col>
-              <FormControl
-                aria-describedby="basic-addon1"
-                value={item.valueItem}
-                onChange={(e) => handleChange(e, "valueItem", index)}
-              />
-            </Col>
-            <ImageComponent
-              src={closeImage}
-              onClick={() => removeRow(index)}
-              index={index}
-            />
-          </Row>
-        );
-      })}
-      <Row>
-        <Col className="pingme-key-value__btn-container">
-          <Button variant="dark" onClick={addRow}>
-            Add
-          </Button>
-        </Col>
-      </Row>
-    </Container>
+            </Row>
+          );
+        })}
+      </Container>
+      <Container>
+        <Row>
+          <Col className="pingme-key-value__btn-container">
+            <Button variant="dark" onClick={addRow}>
+              Add
+            </Button>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 export default KeyValueComponent;

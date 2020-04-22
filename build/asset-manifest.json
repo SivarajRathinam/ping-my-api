@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ping-my-api/static/css/main.23105f0c.chunk.css",
+    "main.js": "/ping-my-api/static/js/main.70f8e9ec.chunk.js",
+    "main.js.map": "/ping-my-api/static/js/main.70f8e9ec.chunk.js.map",
+    "runtime-main.js": "/ping-my-api/static/js/runtime-main.3da4610b.js",
+    "runtime-main.js.map": "/ping-my-api/static/js/runtime-main.3da4610b.js.map",
+    "static/js/2.c30a4308.chunk.js": "/ping-my-api/static/js/2.c30a4308.chunk.js",
+    "static/js/2.c30a4308.chunk.js.map": "/ping-my-api/static/js/2.c30a4308.chunk.js.map",
+    "index.html": "/ping-my-api/index.html",
+    "precache-manifest.dc2e5c3270cb54231ee8387ffdc668a9.js": "/ping-my-api/precache-manifest.dc2e5c3270cb54231ee8387ffdc668a9.js",
+    "service-worker.js": "/ping-my-api/service-worker.js",
+    "static/css/main.23105f0c.chunk.css.map": "/ping-my-api/static/css/main.23105f0c.chunk.css.map",
+    "static/js/2.c30a4308.chunk.js.LICENSE.txt": "/ping-my-api/static/js/2.c30a4308.chunk.js.LICENSE.txt",
+    "static/media/close.png": "/ping-my-api/static/media/close.71077684.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3da4610b.js",
+    "static/js/2.c30a4308.chunk.js",
+    "static/css/main.23105f0c.chunk.css",
+    "static/js/main.70f8e9ec.chunk.js"
+  ]
+}
