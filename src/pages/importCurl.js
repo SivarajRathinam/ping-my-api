@@ -9,18 +9,29 @@ import FormControl from "react-bootstrap/FormControl";
 
 const ImportCurl = (props) => {
   const [show, setShow] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const [data, setData] = useState("");
   const handleClose = () => {
     setShow(false);
+    setErrorMessage("");
   };
   const handleShow = () => {
     setShow(true);
+    setErrorMessage("");
   };
   const handleImportCurl = () => {
-    const newData = convertCurlToJson(data);
-    props.updateData(newData);
-    setShow(false);
+    if (data && data?.trim()) {
+      try {
+        setErrorMessage("");
+        const newData = convertCurlToJson(data);
+        props.updateData(newData);
+        setShow(false);
+      } catch (e) {
+        setErrorMessage("Enter Valid Curl Command");
+      }
+    }
   };
+
   const handleChange = (e) => {
     setData(e.target.value);
   };
@@ -32,7 +43,14 @@ const ImportCurl = (props) => {
       <Modal show={show} onHide={handleClose}>
         <Modal.Body>
           <Container>
-            <Row>
+            <Row className="close-button-container">
+              <Col>
+                <div className="close-button" onClick={handleClose}>
+                  close
+                </div>
+              </Col>
+            </Row>
+            <Row className="text-area-container">
               <Col>
                 <FormControl
                   as="textarea"
@@ -42,13 +60,24 @@ const ImportCurl = (props) => {
                 />
               </Col>
             </Row>
-            <Row>
+            <Row className="import-curl-btn-container">
               <Col>
-                <Button variant={"dark"} onClick={handleImportCurl}>
+                <Button
+                  variant={"dark"}
+                  onClick={handleImportCurl}
+                  disabled={data.length === 0}
+                >
                   Import Curl
                 </Button>
               </Col>
             </Row>
+            {errorMessage && (
+              <Row>
+                <Col>
+                  <div className="error-message">{errorMessage}</div>
+                </Col>
+              </Row>
+            )}
           </Container>
         </Modal.Body>
       </Modal>

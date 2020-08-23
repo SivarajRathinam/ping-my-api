@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import InputGroup from "react-bootstrap/InputGroup";
 import Dropdown from "../components/dropdown";
 import FormControl from "react-bootstrap/FormControl";
@@ -121,6 +121,7 @@ const PingMe = (props) => {
       ),
     },
   ];
+
   const handleMethodChange = (method) => {
     setData((prevState) => {
       const newState = { ...prevState };
@@ -153,7 +154,7 @@ const PingMe = (props) => {
           <InputGroup className="mb-3">
             <Dropdown
               as={InputGroup.prepend}
-              items={["GET", "POST", "PUT", "DELETE"]}
+              items={["GET", "POST", "PUT", "DELETE", "OPTIONS"]}
               title={data.method}
               onChange={handleMethodChange}
             />

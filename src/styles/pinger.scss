@@ -68,15 +68,31 @@
 
 .modal-body {
   .container {
-    .row:first-child {
-      textarea {
-        margin: 10px 0px;
-      }
-    }
-    .row:last-child {
+    .close-button-container {
       .col {
         display: flex;
         justify-content: flex-end;
+        .close-button {
+          display: inline-block;
+          cursor: pointer;
+        }
+      }
+    }
+    .row.text-area-container {
+      textarea {
+        margin: 10px 0px;
+        min-height: 200px;
+      }
+    }
+    .row.import-curl-btn-container {
+      .col {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .row {
+      .error-message {
+        color: red;
       }
     }
   }
