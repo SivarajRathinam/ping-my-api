@@ -38,6 +38,8 @@ object-assign
  * Licensed under the MIT license.
  */
 
+/*! Browser bundle of nunjucks 3.2.2  */
+
 /*! http://mths.be/startswith v0.2.0 by @mathias */
 
 /*! https://mths.be/punycode v1.4.1 by @mathias */
